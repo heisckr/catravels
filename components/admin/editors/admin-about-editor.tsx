@@ -263,12 +263,25 @@ export default function AdminAboutEditor() {
               </div>
 
               <div className="mb-4">
+                <label className="block text-sm font-semibold text-foreground mb-2">Team Member Photo</label>
                 <ImageEditor
                   images={[member.image]}
                   onChange={(images) => handleUpdateTeamMember(member.id, 'image', images[0] || '')}
                   maxImages={1}
-                  label="Team Member Photo"
+                  label=""
                 />
+                {member.image && (
+                  <div className="mt-4 relative w-32 h-32 rounded-lg overflow-hidden border border-border shadow-md">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = 'none'
+                      }}
+                    />
+                  </div>
+                )}
               </div>
 
               <div>

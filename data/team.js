@@ -27,7 +27,7 @@ export const teamMembers = [
     id: 4,
     name: 'Drake Nana Adjei Afram',
     role: 'Accountant',
-    image: '/images/USETHIS IMAGE FOR THE TEAM MEMBER TO REPLACE THE ONE OF THE FOUNDER.jpg',
+    image: '/images/team2.jpg',
     biography: 'Oversees all financial operations including budgeting, invoicing, reconciliation, and maintaining accurate records. Drake brings strong analytical skills and commitment to transparency, supporting organizational financial stability and growth. His meticulous attention to detail and financial expertise ensure that all transactions are handled with precision and integrity.',
     specialties: ['Financial Management', 'Budgeting', 'Record Keeping', 'Financial Analysis'],
   },
